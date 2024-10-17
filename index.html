@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binance Market Data</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Binance Market Data</h1>
+  <div class="controls">
+    <label for="crypto-selector">Select Cryptocurrency:</label>
+    <select id="coinSelector">
+        <option value="ethusdt">ETH/USDT</option>
+        <option value="bnbusdt">BNB/USDT</option>
+        <option value="dotusdt">DOT/USDT</option>
+    </select>
+    <label for="timeframe-selector">Select Timeframe:</label>
+    <select id="intervalSelector">
+        <option value="1m">1 Minute</option>
+        <option value="3m">3 Minutes</option>
+        <option value="5m">5 Minutes</option>
+    </select>
+  </div>
+  <canvas id="candlestickChart"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
